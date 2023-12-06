@@ -1,5 +1,3 @@
-Imports System
-
 Module Program
     Sub Main(args As String())
         Dim [option] As Integer
@@ -9,6 +7,6 @@ Module Program
             Menu.PrintArray(Menu._TypeDataStructures, Menu.Name)
             Console.Write("Select option: ")
             [option] = Menu.Option([option])
-        Loop While [option] <> 6
+        Loop While [option] <> 7
     End Sub
 End Module

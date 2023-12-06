@@ -7,6 +7,7 @@
     Public Shared _ShowMenuList As New MenuList()
     Public Shared _ShowMenuTree As New MenuTree()
     Public Shared _ShowMenuGraph As New MenuGraph()
+    Public Shared _ShowAlgorithm As New MenuAlgorithm()
 
     Public _TypeDataStructures As String() = _Information.TypeDataStructures
 
@@ -37,29 +38,28 @@
         Console.Clear()
         Select Case DataType
             Case EnumDataStructures.Stack
-                Console.WriteLine("""Stack's""")
                 _ShowMenuStack.CycleStack(Numer)
                 Name = "None"
                 Exit Select
 
             Case EnumDataStructures.Queues
-                Console.WriteLine("""Queue's""")
                 _ShowMenuQueue.CycleQueue(Numer)
                 Exit Select
 
             Case EnumDataStructures.List
-                Console.WriteLine("""List's""")
                 _ShowMenuList.CycleList(Numer)
                 Exit Select
 
             Case EnumDataStructures.Tree
-                Console.WriteLine("""Tree's""")
                 _ShowMenuTree.CycleTree(Numer)
                 Exit Select
 
             Case EnumDataStructures.Graph
-                Console.WriteLine("""Graph's""")
                 _ShowMenuGraph.CycleGraph(Numer)
+                Exit Select
+
+            Case EnumDataStructures.Algorithm
+                _ShowAlgorithm.CycleAlgorithm(Numer)
                 Exit Select
 
             Case EnumDataStructures.Exitt

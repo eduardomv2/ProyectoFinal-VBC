@@ -5,6 +5,27 @@
     List
     Tree
     Graph
+    Algorithm
+    Exitt
+End Enum
+
+Public Enum EnumAlgorithm
+    None
+    Bubblesort
+    Cocktailsort
+    Insertionsort
+    Bucketsort
+    Countingsort
+    Mergesort
+    Binarytreesort
+    Pigeonhole
+    Radixsort
+    Gnomesort
+    Shellsort
+    Combsort
+    Selectionsort
+    Heapsort
+    Quicksort
     Exitt
 End Enum
 
@@ -92,7 +113,9 @@ End Enum
 #End Region
 
 Public Class Information
-    Public TypeDataStructures() As String = {"[1]Stack", "[2]Queues", "[3]List", "[4]Tree", "[5]Graph", "[6]Exit"}
+    Public TypeDataStructures() As String = {"[1]Stack", "[2]Queues", "[3]List", "[4]Tree", "[5]Graph", "[6]Algorithm", "[7]Exit"}
+
+    Public TypeAlgorithm() As String = {"[1]Bubblesort", "[2]Cocktailsort", "[3]Insertionsort", "[4]Bucketsort", "[5]Countingsort", "[6]Mergesort", "[7]Binarytreesort", "[8]Pigeonhole", "[9]Radixsort", "[10]Gnomesort", "[11]Shellsort", "[12]Combsort", "[13]Selectionsort", "[14]Heapsort", "[15]Quicksort", "[16]Exit"}
 
 #Region "Types"
     Public TypeStack() As String = {"[1]StackStatic", "[2]StackDinamic", "[3]Exit"}
