@@ -78,10 +78,10 @@
                 Console.ReadKey()
             Case EnumAlgorithm.Bucketsort
                 Name = "Bucketsort"
-                Dim d As Integer() = Multipurpose()
+                Dim d As Double() = GenerarVectorDouble()
                 Console.WriteLine("Original: ")
                 Print(d)
-                _Bucketsortt.BucketSort_int(d)
+                _Bucketsortt.BucketSort_double(d)
                 Console.WriteLine("Bucketsort: ")
                 Print(d)
                 Console.ReadKey()
@@ -205,12 +205,36 @@
         Return array
     End Function
 
-    Private Sub Print(collection As Integer())
+    Public Function GenerarVectorDouble() As Double()
+        Dim Minon = 0
+        Dim Lenght = 0
+        Dim values = 5
+
+        Console.Clear()
+        Console.Write("Insert one data: ")
+        Lenght = Integer.Parse(Console.ReadLine())
+        Console.Clear()
+        Console.WriteLine(vbTab & "@Israel I22050327 Algorithm: " & Name & vbLf)
+        Dim _List As New List(Of Double)()
+
+        For i As Integer = Minon To Lenght - 1
+            If i < values Then
+                Dim NewValor As Double = _Random.NextDouble()
+                _List.Add(NewValor)
+            Else
+                Exit For
+            End If
+        Next
+
+        Return _List.ToArray()
+    End Function
+
+
+    Private Sub Print(collection As Array)
         Console.Write("[")
-        For Each item As Integer In collection
+        For Each item In collection
             Console.Write($" {item}, ")
         Next
         Console.Write("]" & vbCrLf & vbCrLf)
     End Sub
-
 End Class
