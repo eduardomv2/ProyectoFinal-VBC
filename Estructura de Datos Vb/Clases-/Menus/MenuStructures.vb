@@ -16,7 +16,7 @@
 
     Public Sub PrintArray(array As Array, Name As String)
         Console.Clear()
-        Console.WriteLine(vbTab & "@Israel I22050327 Data Structures: " & Name)
+        Console.WriteLine(vbTab & "@Eduardo Villalobos I22050349 Data Structures: " & Name)
         For Each item In array
             Console.WriteLine(item.ToString())
         Next
@@ -63,7 +63,7 @@
                 Exit Select
 
             Case EnumDataStructures.Exitt
-                Console.WriteLine("Good Bay :)")
+                Console.WriteLine("Bye")
                 Console.ReadKey()
                 Exit Select
         End Select

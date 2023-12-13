@@ -195,7 +195,7 @@
         Console.Write("Insert one data: ")
         x = Integer.Parse(Console.ReadLine())
         Console.Clear()
-        Console.WriteLine(vbTab & "@Israel I22050327 Algorithm: " & Name & vbCrLf)
+        Console.WriteLine(vbTab & "@Eduardo Villalobos I22050349 Algorithm: " & Name & vbCrLf)
         Dim array(x - 1) As Integer
 
         For i As Integer = 0 To array.Length - 1
@@ -214,7 +214,7 @@
         Console.Write("Insert one data: ")
         Lenght = Integer.Parse(Console.ReadLine())
         Console.Clear()
-        Console.WriteLine(vbTab & "@Israel I22050327 Algorithm: " & Name & vbLf)
+        Console.WriteLine(vbTab & "@Eduardo Villalobos I22050349 Algorithm: " & Name & vbLf)
         Dim _List As New List(Of Double)()
 
         For i As Integer = Minon To Lenght - 1

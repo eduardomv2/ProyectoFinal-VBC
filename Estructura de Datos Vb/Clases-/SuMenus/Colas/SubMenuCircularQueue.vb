@@ -46,7 +46,7 @@
                 Exit Select
 
             Case EnumOperationsQueue.Enqueue
-                Console.WriteLine("Insert one data: ")
+                Console.WriteLine("Data: ")
                 Try
                     Data = Integer.Parse(Console.ReadLine())
                 Catch
